@@ -6,3 +6,7 @@
     Output (y):   0   2   4   6
 
  ```
+  ## You can see:
+👉 This is just `y = 2x.`
+
+Let’s now make a neural network learn this from scratch.
