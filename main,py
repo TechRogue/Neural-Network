@@ -5,3 +5,17 @@ X = np.array([[0.5, 0.1]])  # shape (1, 2)
 
 # True output (label)
 y_true = np.array([[1]])  # shape (1, 1)
+
+# Weights for input → hidden (2 inputs to 2 neurons)
+W1 = np.random.randn(2, 2)
+b1 = np.zeros((1, 2))
+
+# Weights for hidden → output
+W2 = np.random.randn(2, 1)
+b2 = np.zeros((1, 1))
+
+def relu(x):
+    return np.maximum(0, x)
+
+def relu_derivative(x):
+    return (x > 0).astype(float)
