@@ -43,3 +43,10 @@ d_a1 = d_z2.dot(W2.T)
 d_z1 = d_a1 * relu_derivative(z1)
 d_W1 = X.T.dot(d_z1)
 d_b1 = np.sum(d_z1, axis=0, keepdims=True)
+
+learning_rate = 0.1
+
+W2 -= learning_rate * d_W2
+b2 -= learning_rate * d_b2
+W1 -= learning_rate * d_W1
+b1 -= learning_rate * d_b1
