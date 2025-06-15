@@ -1,1 +1,7 @@
 import numpy as np
+
+# Inputs (2 features)
+X = np.array([[0.5, 0.1]])  # shape (1, 2)
+
+# True output (label)
+y_true = np.array([[1]])  # shape (1, 1)
